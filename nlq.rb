@@ -5,21 +5,21 @@
 class Nlq < Formula
   desc "Natural-language databases — talk to your data, ship without a backend."
   homepage "https://nlqdb.com"
-  version "0.1.23"
+  version "0.1.24"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nlqdb/nlqdb/releases/download/v0.1.23/nlq_0.1.23_macOS_x86_64.tar.gz"
-      sha256 "c6de2ce58967d021c2d4fa474b0bc5644dff41b06e01662aaad72fc59423315b"
+      url "https://github.com/nlqdb/nlqdb/releases/download/v0.1.24/nlq_0.1.24_macOS_x86_64.tar.gz"
+      sha256 "949573f8cb2c556cd73069f463e71bb31860139fc1d8d677b713a6a0d6150d10"
 
       define_method(:install) do
         bin.install "nlq"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nlqdb/nlqdb/releases/download/v0.1.23/nlq_0.1.23_macOS_arm64.tar.gz"
-      sha256 "4188140081c0007bad19b0218c910f7397956bca8414e65f1b114ae95a6fa18a"
+      url "https://github.com/nlqdb/nlqdb/releases/download/v0.1.24/nlq_0.1.24_macOS_arm64.tar.gz"
+      sha256 "7d164e58cd68d443e699dd6e8f8c329aa6331cc6e23a5f58d3340a3e9bd9a011"
 
       define_method(:install) do
         bin.install "nlq"
@@ -29,15 +29,15 @@ class Nlq < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nlqdb/nlqdb/releases/download/v0.1.23/nlq_0.1.23_linux_x86_64.tar.gz"
-      sha256 "33b4b9c1e7694f98b5ef14f6d514b800746b4d4e011b0c9e87cbde17223b1660"
+      url "https://github.com/nlqdb/nlqdb/releases/download/v0.1.24/nlq_0.1.24_linux_x86_64.tar.gz"
+      sha256 "f34ed73b4f8989a64e0eda59b38a32348d3b4e6c284682019a7ba06a512c486a"
       define_method(:install) do
         bin.install "nlq"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nlqdb/nlqdb/releases/download/v0.1.23/nlq_0.1.23_linux_arm64.tar.gz"
-      sha256 "381bc9aa3d8324609a0981eb17d3fbe85e21fc6228770cb9a5838a4ef8e3c76d"
+      url "https://github.com/nlqdb/nlqdb/releases/download/v0.1.24/nlq_0.1.24_linux_arm64.tar.gz"
+      sha256 "f976a7901d40f835e50375a88e1c53143ac1d02614bf31dd422ef1899a29d923"
       define_method(:install) do
         bin.install "nlq"
       end
