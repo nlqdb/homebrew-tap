@@ -5,21 +5,21 @@
 class Nlq < Formula
   desc "Natural-language databases — talk to your data, ship without a backend."
   homepage "https://nlqdb.com"
-  version "0.1.31"
+  version "0.1.32"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nlqdb/nlqdb/releases/download/v0.1.31/nlq_0.1.31_macOS_x86_64_homebrew.tar.gz"
-      sha256 "a8f8ad9ce6554f6b7b6f0847dee1840ffe6b3bcc2baa4c3251a90433dc3ebf2a"
+      url "https://github.com/nlqdb/nlqdb/releases/download/v0.1.32/nlq_0.1.32_macOS_x86_64_homebrew.tar.gz"
+      sha256 "d7d65a2722957ec4decb39bc50c3ba53e85d545dedbb6f92ab4de446a2cf2b73"
 
       define_method(:install) do
         bin.install "nlq"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nlqdb/nlqdb/releases/download/v0.1.31/nlq_0.1.31_macOS_arm64_homebrew.tar.gz"
-      sha256 "13c533fc529229eaa4bceaa8d7f3432fe5cab03663a5edb5a35149a5d4709e43"
+      url "https://github.com/nlqdb/nlqdb/releases/download/v0.1.32/nlq_0.1.32_macOS_arm64_homebrew.tar.gz"
+      sha256 "420beeee003be90fd2ece087c733daf379f29a75dfef6d23b44904451cf61b06"
 
       define_method(:install) do
         bin.install "nlq"
@@ -29,15 +29,15 @@ class Nlq < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nlqdb/nlqdb/releases/download/v0.1.31/nlq_0.1.31_linux_x86_64_homebrew.tar.gz"
-      sha256 "b5ba513ee168cffa72336a2be5a04d5ca95891b0ae872a1286fbf399525ac021"
+      url "https://github.com/nlqdb/nlqdb/releases/download/v0.1.32/nlq_0.1.32_linux_x86_64_homebrew.tar.gz"
+      sha256 "fd6c00fa32b88a73b012fae79ffb90a534605b548e9e56d89bbd96cf9e5ca8f2"
       define_method(:install) do
         bin.install "nlq"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nlqdb/nlqdb/releases/download/v0.1.31/nlq_0.1.31_linux_arm64_homebrew.tar.gz"
-      sha256 "aae9bb8a2c8d4dc4f82cbb3f627a582447174dc07f605e37558a5270a9c3c085"
+      url "https://github.com/nlqdb/nlqdb/releases/download/v0.1.32/nlq_0.1.32_linux_arm64_homebrew.tar.gz"
+      sha256 "ed2005d5f361b538c80a6bf56269cd4a99def091e3e2f72872d8ee029f23ce46"
       define_method(:install) do
         bin.install "nlq"
       end
